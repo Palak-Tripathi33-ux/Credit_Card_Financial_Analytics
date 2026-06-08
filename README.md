@@ -51,23 +51,23 @@ Excel / CSV — initial data preparation before database import.
 
 📅 Data filtered to Q4 | Week - 01 October 2023
 
-1. Blue Card Dominates Revenue — by a Wide Margin
+1. Blue Card Dominates Revenue — by a Wide Margin-
 Blue card holders generated ₹843K in revenue out of the total ₹994K, making up roughly 85% of all card revenue. Silver was a distant second at ₹121K, followed by Platinum (₹19K) and Gold (₹10K). This shows the Blue card is the primary revenue driver and should be the focus for retention and upsell strategies.
-2. Swipe Transactions Lead, But Online Is Underutilized
+2. Swipe Transactions Lead, But Online Is Underutilized-
 Swipe-based transactions generated ₹0.67M, significantly ahead of Chip (₹0.26M) and Online (₹0.06M). The very low share of online transactions (~6%) indicates a major opportunity to push digital adoption through targeted offers or cashback incentives.
-3. Bills and Fuel Are the Top Spending Categories
+3. Bills and Fuel Are the Top Spending Categories-
 Bills accounted for ₹0.25M and Fuel for ₹0.19M, together making up the largest share of transaction volume. Entertainment (₹0.16M), Grocery (₹0.14M), and Food (₹0.14M) followed closely. Travel (₹0.11M) had the lowest contribution — suggesting customers primarily use their cards for everyday essentials, not leisure.
-4. Businessmen Are the Most Valuable Customer Segment
+4. Businessmen Are the Most Valuable Customer Segment-
 Businessmen contributed ₹299K in revenue — nearly double that of the second-highest group, Self-employed customers (₹161K). White-collar (₹149K) and Govt employees (₹149K) were nearly tied. Retirees generated the lowest revenue at ₹109K, making them the least profitable segment.
-5. High-Income Group Generates the Most Revenue
+5. High-Income Group Generates the Most Revenue-
 High-income customers contributed ₹0.41M, compared to Medium (₹0.15M) and Low (₹0.21M) income groups. Interestingly, Low-income customers outperformed Medium — suggesting higher transaction frequency or revolving balance behavior in that segment worth investigating.
-6. Married Customers Spend More Than Single Customers
+6. Married Customers Spend More Than Single Customers-
 Married customers generated ₹0.25M in revenue versus ₹0.20M from single customers. This ~25% gap suggests that married customers likely have higher household spending needs, making them a more valuable demographic for premium card offers.
-7. The 40–50 Age Group Is the Highest-Revenue Age Segment
+7. The 40–50 Age Group Is the Highest-Revenue Age Segment-
 Customers aged 40–50 contributed ₹0.20M in revenue, followed by the 50–60 group (₹0.18M) and 30–40 group (₹0.16M). The 20–30 and 60+ groups contributed the least. Mid-career professionals in their 40s appear to be the most financially active credit card users.
-8. Graduates Lead in Revenue Across Education Levels
+8. Graduates Lead in Revenue Across Education Levels-
 Graduate customers generated ₹0.19M, the highest among all education groups, followed by Unknown (₹0.12M) and High School (₹0.11M). Post-graduates and Doctorate holders contributed the least — possibly due to smaller sample size or lower card usage frequency.
-9. New York and California Are the Top Revenue-Generating States
+9. New York and California Are the Top Revenue-Generating States-
 NY led with a combined revenue of ₹0.26M (₹0.13M each across two segments), followed by CA (₹0.23M), FL (₹0.20M), and TX (₹0.18M). NJ had the lowest contribution among the Top 5 states. These 5 states together account for the majority of geographic revenue concentration.
 10. Overall Dashboard KPIs at a Glance (Q4)-
 Total Revenue: ₹994K
