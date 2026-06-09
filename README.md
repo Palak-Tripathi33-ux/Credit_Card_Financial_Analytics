@@ -2,11 +2,13 @@
 Power BI | Financial Analytics | Business Intelligence | DAX QUERY
 
 📌 Project Overview
+
 This is an end-to-end Power BI dashboard project built to analyze credit card transaction and customer data. The dashboard is split into two report pages — Credit Card Transaction Report and Credit Card Customer Report — and provides a consolidated view of revenue performance, spending behavior, and customer demographics.
 
 The project uses real-world-style structured data with two core tables: cc_detail (transaction data) and cust_detail (customer data), connected via a shared client_num key. All data was loaded from a PostgreSQL database into Power BI for transformation and visualization.
 
 🎯 Business Objective
+
 Credit card companies generate revenue through interest, annual fees, and transaction volumes — but understanding who is spending, how much, and when requires more than raw numbers. The goal of this project was to:
 
 Track weekly and quarterly revenue trends across card categories.
@@ -133,9 +135,11 @@ Wrote all DAX measures manually, including the week-over-week revenue logic.
 Created custom calculated columns (AgeGroup, Income Group) in Power Query to enable meaningful demographic segmentation.
 
 🧠 Skills Demonstrated
+
 Power BI · DAX · Power Query · PostgreSQL · Data Modeling · Financial Analytics · KPI Dashboard Design · Time Intelligence · Data Cleaning · Business Intelligence · Data Storytelling · Segmentation Analysis
 
 🏁 Conclusion
+
 This project gave me practical, hands-on experience in building a business-grade analytics dashboard from raw transactional and customer data. Working through the full pipeline — from database to data model to final visuals — helped me understand not just the tools, but the thinking behind converting data into decisions.
 
 As a BBA student with a strong interest in business analytics and finance, this project reflects my ability to independently take on a real-world BI problem, handle its technical challenges, and deliver a clean, insight-driven output. I plan to continue expanding this dashboard with forecasting visuals and customer churn indicators as I grow my skills further.
