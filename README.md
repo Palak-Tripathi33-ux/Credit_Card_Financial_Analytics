@@ -132,6 +132,10 @@ Created a consistent color theme — blue/gold palette aligned with credit card 
 
 Tested all slicers and cross-filter interactions to ensure accurate drill-down behavior.
 
+Added data labels on all charts for immediate readability without hovering.
+
+Produced both dashboard screenshots and the .pbit template file for reusability.
+
 🧠 Skills Demonstrated
 
 Power BI Dashboard Design (multi-page, multi-visual).
