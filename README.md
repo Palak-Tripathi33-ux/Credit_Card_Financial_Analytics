@@ -1,161 +1,133 @@
-💳 Credit Card Financial Analytics Dashboard — Power BI
+# Credit Card Financial Analytics Dashboard (Power BI)
 
-A two-page interactive Power BI dashboard analyzing credit card transactions and customer behavior across ₹55M+ in revenue data.
+## Project Overview
 
-📌 Project Overview
+This project features a comprehensive, two-page interactive Power BI business intelligence dashboard designed to analyze credit card financial data from dual perspectives: transactions and customers. 
 
-This project is a Power BI business intelligence dashboard built to analyze credit card financial data across two perspectives — transactions and customers. It covers over 1 million transactions, ₹55M in total revenue, and ₹45M in transaction amounts, helping stakeholders understand spending patterns, customer demographics, and revenue drivers at a glance.
+Processing over 1 million transactions and evaluating ₹55M in total revenue alongside ₹45M in transaction volumes, the dashboard converts raw relational datasets into an executive-ready interface for monitoring spending trends, customer demographics, and revenue drivers.
 
-The dashboard is divided into two report pages:
+The architecture is divided into two target-focused report pages:
 
-CC Transactions Report — focuses on spend categories, card performance, and quarterly trends.
+* **CC Transactions Report:** Focuses on expenditure categories, card tier performance, and quarterly transaction trends.
 
-CC Customer Report — focuses on customer demographics, income groups, geography, and CSS (Customer Satisfaction Score).
+* **CC Customer Report:** Focuses on customer demographic profiling, income segmentations, geographic penetration, and customer satisfaction metrics.
 
-🎯 Business Objective
+## Business Objective
 
-Identify which card categories and customer segments drive the most revenue.
+The project aims to diagnose portfolio performance to drive optimization for credit card product positioning and marketing strategy by:
 
-Track quarterly revenue trends and transaction volumes across Q1–Q4.
+* Identifying high-value card categories and customer segments driving the largest share of revenue.
 
-Understand how demographics (age, job, education, marital status) influence spending.
+* Tracking quarterly revenue trajectories and transaction volume baseline variations (Q1–Q4).
 
-Enable data-driven decisions for credit card product strategy and customer targeting.
+* Understanding the direct impact of consumer demographics (age, occupation, education, marital status) on spending behavior.
 
-📊 Dashboard Features
+* Providing data-driven insights to optimize customer targeting and risk-segmentation strategies.
 
-CC Transactions Report (Page 1)
+## Dashboard Features
 
-KPI cards: Revenue ₹55M | Trans_Amt ₹45M | Total Interest ₹8M | Count 1M.
+### Page 1: CC Transactions Report
 
-Revenue breakdown by card category — Blue (₹46M), Silver (₹6M), Gold (₹2M), Platinum (₹1M).
+* **Executive KPI Snapshot:** High-visibility cards monitoring core financial health: Revenue (**₹55M**), Transaction Amount (**₹45M**), Total Interest Earned (**₹8M**), and Total Volume (**1M** transactions).
 
-Revenue by expenditure type: Bills ₹14M, Entertainment ₹10M, Fuel ₹9M, Grocery ₹9M, Food ₹8M, Travel ₹6M.
+* **Card Performance Matrix:** Breakdown of revenue distribution across product tiers: Blue (**₹46M**), Silver (**₹6M**), Gold (**₹2M**), and Platinum (**₹1M**).
 
-QTR Revenue + Transaction Count combo chart (Q1–Q4 trend with ~164K avg transactions per quarter).
+* **Expenditure Allocation:** Category-wise revenue tracking across primary spend buckets: Bills (**₹14M**), Entertainment (**₹10M**), Fuel (**₹9M**), Grocery (**₹9M**), Food (**₹8M**), and Travel (**₹6M**).
 
-Revenue by use chip method: Swipe ₹35M, Chip ₹17M, Online ₹3M.
+* **Quarterly Volume & Trend Analysis:** A dual-axis line-and-bar combo chart mapping quarterly revenue performance alongside transaction density (averaging ~164K transactions/quarter).
 
-Revenue by education level, customer job, and card category bar charts.
+* **Payment Method Segmentation:** High-level overview of revenue generation by usage channel: Swipe (**₹35M**), Chip (**₹17M**), and Online (**₹3M**).
 
-Gender filter (M/F) + Card type slicer for dynamic segmentation.
+* **Cross-Filter Infrastructure:** Integrated Gender (M/F) and Card Type slicers for immediate on-the-fly data discovery.
 
-CC Customer Report (Page 2)
+### Page 2: CC Customer Report
 
-KPI cards: Revenue ₹55M | Total Interest ₹8M | Income ₹576M | CSS 3.19.
+* **Customer Health KPIs:** High-level summaries tracking Total Revenue (**₹55M**), Total Interest (**₹8M**), Aggregate Customer Income (**₹576M**), and Customer Satisfaction Score (**3.19/5 CSS**).
 
-Revenue by week (Jan–Oct 2023) with weekly fluctuation between ₹0.38M–₹0.77M.
+* **Weekly Revenue Trajectory:** Time-series analysis modeling weekly revenue trends (Jan–Oct 2023), highlighting cyclical variations between ₹0.38M and ₹0.77M.
 
-Revenue by age group: 40–50 age band contributes the highest (₹11M + ₹14M across genders).
+* **Demographic Age Banding:** Comparative analysis revealing the 40–50 age bracket as the highest revenue driver, yielding over **₹25M** across genders.
 
-Job-wise breakdown: Businessman ₹17M, White-collar ₹10M, Self-employed ₹8M.
+* **Occupational Revenue Share:** Breakdown by profession: Businessman (**₹17M**), White-collar (**₹10M**), and Self-employed (**₹8M**).
 
-Top 5 States: TX, NY, CA, FL, NJ — with TX and NY each generating ₹6–7M.
+* **Geographic Top 5 States:** Performance rankings across top revenue-generating territories: TX, NY, CA, FL, and NJ, with TX and NY leading at ₹6M–₹7M each.
 
-Revenue by marital status: Married ₹26M, Single ₹22M.
+* **Socio-Economic Segmentations:** Layered visualizations analyzing revenue by Marital Status (Married: **₹26M** vs. Single: **₹22M**), Income Tier (High: **₹29M**, Medium: **₹16M**, Low: **₹10M**), Dependent Count, and Education Level.
 
-Revenue by income group: HIGH ₹29M, MEDIUM ₹16M, LOW ₹10M.
+## Tools & Technical Stack Used
 
-Revenue by dependent count and education level.
+* **Power BI Desktop:** Core platform utilized for report page design, data modeling, and visualization architecture.
 
-Quarter (Q1–Q4) + Week start date slicer for time-based filtering.
+* **Power Query (M Language):** Employed for advanced ETL processes, data cleaning, attribute standardization, and structural normalization.
 
-🛠️ Tools Used
+* **DAX (Data Analysis Expressions):** Formulated custom measures for calculated columns, multi-variable KPI aggregations, satisfaction indexing, and time-intelligence comparisons.
 
-Microsoft Power BI Desktop — dashboard design, DAX measures, data modeling.
+* **PostgreSQL / CSV:** Source database storage managing the underlying transaction (`public.cc_detail`) and demographic (`public.cust_detail`) relational tables.
 
-Power Query (M Language) — data cleaning and transformation.
+## Key Insights
 
-DAX (Data Analysis Expressions) — custom measures for revenue, interest, CSS, and time intelligence.
+* **Product Concentration:** The **Blue Card** tier acts as the primary revenue engine, contributing **₹46M** out of the ₹55M total portfolio value—accounting for over **83%** of aggregate revenue.
 
-PostgreSQL / CSV — source data tables (public.cc_detail, public.cust_detail).
+* **Dominant Spend Buckets:** **Bills** represent the leading transaction category at **₹14M**, closely followed by **Entertainment** at **₹10M**, pinpointing clear targets for rewards-program optimization.
 
-GitHub — version control and project documentation.
+* **High-Value Professional Segment:** The **Businessman** cohort yields the highest occupational revenue at **₹17M** and commands **₹2.5M** of the total interest earned.
 
-🔍 Key Insights
+* **Demographic Target Core:** The **40–50 age group** forms the most valuable customer segment, accounting for a combined **₹25M+** in revenue share.
 
-Blue card holders account for ₹46M out of ₹55M total revenue — over 83% of all revenue.
+* **Low Digital Channel Adoption:** **Swipe transactions dominate at ₹35M**, far exceeding Chip (₹17M) and Online (₹3M), signaling a major opportunity to digitize user behaviors.
 
-Bills is the top expenditure category at ₹14M, followed by Entertainment at ₹10M.
+* **Income Tier Disparity:** High-income consumers represent the financial anchor of the portfolio, contributing **₹29M**—over **53%** of total revenue.
 
-Businessmen generate the highest revenue by job at ₹17M with ₹2.5M in interest earned.
+* **Seasonal Peaks:** Portfolio revenue experienced strong mid-year acceleration, reaching weekly peaks of approximately **₹0.77M** in April 2023.
 
-The 40–50 age group is the most valuable customer segment with combined ₹25M+ revenue.
+## Learning Outcomes
 
-Swipe transactions dominate at ₹35M vs Chip ₹17M and Online ₹3M — indicating low digital adoption.
+* **Relational Data Modeling:** Gained hands-on experience establishing structured star-schema relationships between large scale transaction and dimension tables based on Customer IDs.
 
-High-income group customers alone contribute ₹29M — 53% of total revenue.
+* **Advanced DAX Engineering:** Developed proficiency in writing custom calculations for context-aware KPIs, time-intelligence trend comparisons, and dynamic demographic bucketing.
 
-Married customers generate slightly more revenue (₹26M) vs Single (₹22M).
+* **Interactive UI/UX Best Practices:** Mastered configuration of synchronized multi-page slicers, cross-filtering, and strategic space management to ensure seamless navigation.
 
-Revenue peaked mid-year with weekly highs around ₹0.77M in April 2023.
+* **Strategic Visual Selection:** Learned to select optimal visualization styles based on data complexity—utilizing dual-axis combo charts for volume-to-value trends and clustered bars for multi-variable demographic profiling.
 
-Graduate-level customers are the top earners by education at ₹22M revenue.
+## Challenges Faced & Resolution
 
-CSS score of 3.19/5 signals moderate customer satisfaction — room for product improvement.
+* **Handling Incomplete Demographic Records:** The raw data contained widespread null values and "Unknown" text indicators across critical tracking metrics like education levels and dependent counts.
 
-📚 Learning Outcomes
+  * *Resolution:* Standardized missing fields within Power Query using conditional formatting logic to prevent downstream data skewing while protecting row-count integrity.
+  
+* **Calendar & Time Intelligence Setup:** Building weekly and quarterly filters required a dedicated fiscal time dimension to manage asynchronous reporting dates.
 
-Built a multi-page Power BI report from raw relational data with two fact/dimension tables.
+  * *Resolution:* Engineered a robust, custom calendar table utilizing DAX to establish predictable time intelligence filtering paths.
+  
+* **Visual Density Management:** Consolidating more than 8 individual data visuals on a single dashboard screen created high visual density and potential cognitive overload.
 
-Wrote DAX measures for aggregated KPIs, time intelligence (quarterly comparison), and CSS calculation.
+  * *Resolution:* Applied rigorous design alignment rules, adjusted typography hierarchies, eliminated redundant labels, and utilized an intentional, clean layout to maximize whitespace.
+  
+* **Synchronizing Scales on Dual-Axes:** Combining high-volume transaction counts with monetary revenue metrics on a unified quarterly trend line risked data misinterpretation.
 
-Designed interactive slicers — quarter filter, week start date, gender, and card type — enabling cross-page filtering.
+  * *Resolution:* Calibrated the visual scale properties manually, applying distinct data-label themes to isolate volume metrics from currency values.
 
-Applied data modeling best practices by linking cc_detail and cust_detail tables on customer ID.
+## My Efforts and Contributions
 
-Learned to choose the right visual type per use case — combo charts for trend + volume, clustered bars for demographic comparison.
+* Directed the end-to-end business intelligence workflow: extracting raw SQL/CSV tables, defining table relationships, auditing data constraints, and designing layouts.
 
-Understood how to present ₹55M+ financial data in an executive-ready, one-glance format.
+* Authored **15+ foundational DAX measures** covering Core Revenue, Aggregate Interest, CSS score indexing, and custom customer category segmentation boundaries.
 
-⚡ Challenges Faced
+* Designed a custom, high-contrast visual theme featuring a professional blue and gold color palette tailored to credit card industry branding.
 
-Messy demographic data — multiple nulls and "Unknown" values in education, marital status, and dependent count fields required careful handling in Power Query without distorting totals.
+* Conducted system validation testing to verify that all page interactions, cross-highlighting, and filter dependencies operate accurately without processing bottlenecks.
 
-Date table setup — building a proper calendar table for week-based and quarterly slicing required custom DAX and Power Query steps.
+## Skills Demonstrated
 
-Chart clutter — fitting 8+ visuals per page while keeping the layout readable required iterative design decisions on spacing, font sizes, and color coding.
+`Business Intelligence (BI)` • `Data Modeling (Star Schema)` • `DAX Measure Engineering` • `Power Query & ETL` • `Data Cleaning & Standardization` • `Financial Analytics` • `Demographic Segmentation` • `Dashboard UI/UX Design`
 
-Dual-axis chart — aligning revenue bars and transaction count line on different scales in the QTR chart was technically tricky.
+## Conclusion
 
-Filter consistency — ensuring slicers on Page 1 didn't bleed into Page 2 unintentionally required explicit filter scope management.
+This portfolio project demonstrates my capacity to take large-scale, relational financial datasets and translate them into polished, interactive dashboard solutions tailored for executive leadership review. As a BBA student, building this project from scratch has bridge the gap between financial administration theory and modern data analytics tools, developing core competencies directly applicable to roles such as Business Analyst, Data Analyst, or Financial Analyst.
 
-💼 My Efforts and Contributions
+***
 
-Sourced, cleaned, and modeled two raw data tables with 10,000+ customer records and 1M+ transactions.
+**Project Developed By:** Palak Tripathi | BBA Student | Aspiring Data & Business Analyst  
 
-Designed the entire dashboard layout from scratch — no templates used.
-
-Wrote 15+ DAX measures including Revenue, Total Interest, CSS, QoQ comparisons, and income-group segmentation.
-
-Created a consistent color theme — blue/gold palette aligned with credit card brand aesthetics.
-
-Tested all slicers and cross-filter interactions to ensure accurate drill-down behavior.
-
-Added data labels on all charts for immediate readability without hovering.
-
-Produced both dashboard screenshots and the .pbit template file for reusability.
-
-🧠 Skills Demonstrated
-
-Power BI Dashboard Design (multi-page, multi-visual).
-
-DAX — calculated columns, measures, time intelligence.
-
-Power Query — data cleaning, joins, type casting.
-
-Data Modeling — star schema, table relationships.
-
-Business Analysis — translating raw financial data into actionable insights.
-
-Data Storytelling — structuring a narrative across two focused report pages.
-
-Attention to Detail — consistent formatting, labeled axes, readable color contrast.
-
-✅ Conclusion
-
-This project demonstrates my ability to independently build a production-grade Power BI dashboard on real-world financial data — from raw CSV/SQL tables to a polished, recruiter-ready analytics report. As a BBA student, this project reflects my understanding of both business fundamentals and data analytics, and my commitment to building skills that are directly applicable in roles like Business Analyst, Data Analyst, or Financial Analyst.
-
-Made by - Palak Tripathi | BBA Student | Aspiring Data & Business Analyst
-
-📬 Feel free to connect with me on LinkedIn - https://www.linkedin.com/in/palak-tripathi-37a56234a/  or reach out if you'd like to discuss this project further.
+**Let's Connect:** Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/palak-tripathi-37a56234a/) or reach out if you would like to discuss this project further!
